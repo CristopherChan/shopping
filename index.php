@@ -41,7 +41,7 @@ if(isset($_POST['add_to_cart'])){
    <title>shopping cart</title>
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="home-page-style.css">
 
 </head>
 <body>
@@ -54,28 +54,41 @@ if(isset($message)){
 }
 ?>
 
-<div class="container">
-
-<div class="user-profile">
    
-
-   <?php
+<div class="container">
+<header>
+   
+<?php
       $select_user = mysqli_query($conn, "SELECT * FROM `user_form` WHERE id = '$user_id'") or die('query failed');
       if(mysqli_num_rows($select_user) > 0){
          $fetch_user = mysqli_fetch_assoc($select_user);
       };
    ?>
-   <p> picture :<img src="images/<?php echo $fetch_product['images']; ?>" alt="picture"></p>
-   <p> username : <span><?php echo $fetch_user['fname']; ?></span> </p>
-   <p> email : <span><?php echo $fetch_user['email']; ?></span> </p>
-   <div class="flex">
-      <a href="shopping.php" class="btn">cart</a>
-      <a href="login.php" class="btn">login</a>
-      <a href="create.php" class="option-btn">register</a>
-      <a href="logout.php?logout=<?php echo $user_id; ?>" onclick="return confirm('are your sure you want to logout?');" class="delete-btn">logout</a>
-   </div>
 
-</div>
+     <nav>
+        <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <img class="menu" src="./img/icons8-menu-50.png" alt="menu">
+            </label>
+            <label class="logo"><a href="index.php"><img class="mulana" src="./img/MULANA-removebg-preview.png" alt="picture"></a></label>
+            <ul>
+                <li><a class="active" href="index.php">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="about.php">About</a></li>
+            </ul>
+            
+            <ol class="imgs">
+            <li><a href="shopping.php"><img class="people" src="./img/grocery-store.png" alt=""></a></li>
+
+            <li><a href="login.php"><img class="people" src="./img/people.png" alt=""></a></li>
+
+            <li><a href="logout.php?logout=<?php echo $user_id; ?>" onclick="return confirm('are your sure you want to logout?');" class="delete-btn"><img class="people" src="./img/icons8-logout-30.png" alt="out" title="log out"></a></li>
+                
+
+            </ol>
+  </nav>
+     </header>
+
 
 <div class="products">
 
@@ -89,9 +102,9 @@ if(isset($message)){
          while($fetch_product = mysqli_fetch_assoc($select_product)){
    ?>
       <form method="post" class="box" action="">
-         <img src="<?php echo $fetch_product['image']; ?>" alt="">
+         <img class="product-image" src="<?php echo $fetch_product['image']; ?>" alt="">
          <div class="name"><?php echo $fetch_product['name']; ?></div>
-         <div class="price">$<?php echo $fetch_product['price']; ?>/-</div>
+         <div class="price">₱<?php echo $fetch_product['price']; ?></div>
          <input type="number" min="1" name="product_quantity" value="1">
          <input type="hidden" name="product_image" value="<?php echo $fetch_product['image']; ?>">
          <input type="hidden" name="product_name" value="<?php echo $fetch_product['name']; ?>">
@@ -110,4 +123,5 @@ if(isset($message)){
 </div>
 
 </body>
+
 </html>

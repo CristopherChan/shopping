@@ -15,19 +15,39 @@ section{
     width: 40%;
     text-align: center;
     align-items: baseline;
-    background: blue;
-    border: 10px solid black;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(62,62,193,1) 35%, rgba(0,212,255,1) 100%);
     border-radius: 12px;
     margin-top: 5%;
     position: relative;
+    box-shadow: 0 0 15px rgba(0,0,0,.5);
 
 }
-h1 {
+
+.cancel:hover{
+    cursor: pointer;
+    transition: .5s ease all;
+    background: linear-gradient(0deg, rgba(0,100,255,1) 0%, rgba(163,44,140,1) 100%);
+    transform: scale(1.1);
+}
+
+.cancel{
+    border-radius:16px ;
+    margin: 30px;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-size: px;
+    background: rgb(16, 93, 209);
+    padding: 8px;
+    width: 150px;
+}
+.title {
+    border-radius:0 0 16px 16px ;
     margin: 30px;
     text-transform: uppercase;
     color: aliceblue;
     font-size: 34px;
     background: tan;
+    padding: 10px;
 }
 form{
     
@@ -40,7 +60,7 @@ form{
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    background: tomato;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0,0,0,.5);
 
@@ -62,15 +82,18 @@ input{
     text-align: center;
     background: #ffffff;
     color: #000000;
+    font-size: 14px;
 }
 
 input[type=file]{
     text-align: center;
-  margin: auto;
-  color:brown;
+    margin: auto;
+    color:brown;
+    align-items: center;
 }
 #upload{
-    color: black;
+    color: rgb(245, 244, 244);
+    background: rgb(63,94,251);
 }
 #upload:hover{
     cursor: pointer;

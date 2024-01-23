@@ -59,7 +59,7 @@ if(isset($_GET['delete_all'])){
       <tr>
          <td><img src="<?php echo $fetch_cart['image']; ?>" height="100" alt=""></td>
          <td><?php echo $fetch_cart['name']; ?></td>
-         <td>$<?php echo $fetch_cart['price']; ?>/-</td>
+         <td>₱<?php echo $fetch_cart['price']; ?></td>
          <td>
             <form action="" method="post">
                <input type="hidden" name="cart_id" value="<?php echo $fetch_cart['id']; ?>">
@@ -67,8 +67,8 @@ if(isset($_GET['delete_all'])){
                <input type="submit" name="update_cart" value="update" class="option-btn">
             </form>
          </td>
-         <td>$<?php echo $sub_total = ($fetch_cart['price'] * $fetch_cart['quantity']); ?>/-</td>
-         <td><a href="index.php?remove=<?php echo $fetch_cart['id']; ?>" class="delete-btn" onclick="return confirm('remove item from cart?');">remove</a></td>
+         <td>₱<?php echo $sub_total = ($fetch_cart['price'] * $fetch_cart['quantity']); ?></td>
+         <td><a href="shopping.php?remove=<?php echo $fetch_cart['id']; ?>" class="delete-btn" onclick="return confirm('remove item from cart?');">remove</a></td>
       </tr>
    <?php
       $grand_total += $sub_total;
@@ -80,7 +80,7 @@ if(isset($_GET['delete_all'])){
    <tr class="table-bottom">
       <td colspan="4">grand total :</td>
       <td>$<?php echo $grand_total; ?>/-</td>
-      <td><a href="index.php?delete_all" onclick="return confirm('delete all from cart?');" class="delete-btn <?php echo ($grand_total > 1)?'':'disabled'; ?>">delete all</a></td>
+      <td><a href="shopping.php?delete_all" onclick="return confirm('delete all from cart?');" class="delete-btn <?php echo ($grand_total > 1)?'':'disabled'; ?>">delete all</a></td>
    </tr>
 </tbody>
 </table>
