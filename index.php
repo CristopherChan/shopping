@@ -2,7 +2,9 @@
 
 include 'config.php';
 session_start();
+
 $user_id = $_SESSION['user_id'];
+
 
 if(!isset($user_id)){
    header('location:login.php');
@@ -57,14 +59,6 @@ if(isset($message)){
    
 <div class="container">
 <header>
-   
-<?php
-      $select_user = mysqli_query($conn, "SELECT * FROM `user_form` WHERE id = '$user_id'") or die('query failed');
-      if(mysqli_num_rows($select_user) > 0){
-         $fetch_user = mysqli_fetch_assoc($select_user);
-      };
-   ?>
-
      <nav>
         <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
@@ -78,9 +72,10 @@ if(isset($message)){
             </ul>
             
             <ol class="imgs">
+            <img id="profile" src="images/<?php echo $picture;?>"alt="Picture" width="250">
             <li><a href="shopping.php"><img class="people" src="./img/grocery-store.png" alt=""></a></li>
 
-            <li><a href="login.php"><img class="people" src="./img/people.png" alt=""></a></li>
+            <li><a href="profile.php"><img class="people" src="./img/people.png" alt=""></a></li>
 
             <li><a href="logout.php?logout=<?php echo $user_id; ?>" onclick="return confirm('are your sure you want to logout?');" class="delete-btn"><img class="people" src="./img/icons8-logout-30.png" alt="out" title="log out"></a></li>
                 

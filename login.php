@@ -15,8 +15,8 @@ if(isset($_POST['submit'])){
       $_SESSION['user_id'] = $row['id'];
       header('location:index.php');
    }else{
-      $message[] = 'incorrect password or email!';
-   }
+		echo "<script>alert('Sorry, Wrong Username or Password')</script>";
+		echo "<script>window.open('login.php','_self')</script>";   }
 
 }
 

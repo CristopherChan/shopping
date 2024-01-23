@@ -1,10 +1,10 @@
 
 <?php
 include_once("connection.php");
-if(isset($_SESSION['cid'])){
-	$uid = $_SESSION['cid'];
-	$userQuery = $conn->prepare("SELECT fname, lname, img FROM user_form WHERE id	 = :uid");
-	$userQuery->bindParam(':uid', $uid);
+$user_id = $_SESSION['user_id'];
+if(isset($_SESSION['user_id'])){
+	
+	$userQuery = $conn->prepare("SELECT fname, lname, img FROM user_form WHERE id = '$user_id'");
 	$userQuery->execute();
 	
 	while($data = $userQuery->fetch()){
