@@ -36,6 +36,7 @@ if(isset($_GET['delete_all'])){
 </head>
 <body>
 <div class="container">
+   
 <div class="shopping-cart">
 
 <h1 class="heading">shopping cart</h1>
@@ -79,7 +80,7 @@ if(isset($_GET['delete_all'])){
    ?>
    <tr class="table-bottom">
       <td colspan="4">grand total :</td>
-      <td>$<?php echo $grand_total; ?>/-</td>
+      <td>₱<?php echo $grand_total; ?>/-</td>
       <td><a href="shopping.php?delete_all" onclick="return confirm('delete all from cart?');" class="delete-btn <?php echo ($grand_total > 1)?'':'disabled'; ?>">delete all</a></td>
    </tr>
 </tbody>
@@ -88,7 +89,9 @@ if(isset($_GET['delete_all'])){
 <div class="cart-btn">  
    <a href="#" class="btn <?php echo ($grand_total > 1)?'':'disabled'; ?>">proceed to checkout</a>
 </div>
-
+<div class="cart-btn">  
+   <a class="btn" href="index.php">go back?</a>
+</div>
 </div>
 </div>
 </body>

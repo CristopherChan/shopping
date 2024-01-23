@@ -47,7 +47,6 @@
                 <input type="submit" name="find" id="find" value="search">
             </form></li>
             
-                <li><a href="profile.php"><img id="profile" src="upload/<?php echo $larawan;?>" alt="User Profile" ></a></li>
     
                 <li><a href="logout.php?logout=<?php echo $user_id; ?>" onclick="return confirm('are your sure you want to logout?');" class="delete-btn">logout<img class="people" src="./img/icons8-logout-30.png" alt="out" title="log out"></a></li>
                 <li><a href="cart.php"><img class="cart" style="width: 30px; height: 30px;" src="./img/grocery-store.png" alt=""> <span id="badge"><?php echo mysqli_num_rows($all_cart);?></span></a></li>
