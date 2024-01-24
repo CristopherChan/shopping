@@ -78,9 +78,13 @@ if(isset($message)){
             </ul>
             
             <ol class="imgs">
+            <li><form action="search.php" method="post">
+                <input type="text" placeholder="search here..." name="search">
+                <input type="submit" name="find" id="find" value="search">
+            </form></li>
             <li><a href="shopping.php"><img class="people" src="./img/grocery-store.png" alt=""></a></li>
 
-            <li><a href="login.php"><img class="people" src="./img/people.png" alt=""></a></li>
+            <li><a href="profile.php"><img class="people" src="./img/people.png" alt=""></a></li>
 
             <li><a href="logout.php?logout=<?php echo $user_id; ?>" onclick="return confirm('are your sure you want to logout?');" class="delete-btn"><img class="people" src="./img/icons8-logout-30.png" alt="out" title="log out"></a></li>
                 
