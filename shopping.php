@@ -73,21 +73,21 @@ if(isset($_GET['delete_all'])){
       </tr>
    <?php
       $grand_total += $sub_total;
-         }
+         }  
       }else{
          echo '<tr><td style="padding:20px; text-transform:capitalize;" colspan="6">no item added</td></tr>';
       }
    ?>
    <tr class="table-bottom">
       <td colspan="4">grand total :</td>
-      <td>₱<?php echo $grand_total; ?>/-</td>
+      <td>₱<?php echo $grand_total; ?></td>
       <td><a href="shopping.php?delete_all" onclick="return confirm('delete all from cart?');" class="delete-btn <?php echo ($grand_total > 1)?'':'disabled'; ?>">delete all</a></td>
    </tr>
 </tbody>
 </table>
 
 <div class="cart-btn">  
-   <a href="#" class="btn <?php echo ($grand_total > 1)?'':'disabled'; ?>">proceed to checkout</a>
+   <a href="homepage.php" class="btn <?php echo ($grand_total > 1)?>">proceed to checkout</a>
 </div>
 <div class="cart-btn">  
    <a class="btn" href="index.php">go back?</a>
