@@ -72,7 +72,9 @@ if(isset($message)){
             </ul>
             
             <ol class="imgs">
-
+            <li><form action="search.php" method="post">
+                <input type="text" id="search" placeholder="search here..." name="search">
+            </form></li>
             <li><a href="shopping.php"><img class="people" src="./img/grocery-store.png" alt=""></a></li>
 
             <li><a href="profile.php"><img class="people" src="./img/people.png" alt=""></a></li>

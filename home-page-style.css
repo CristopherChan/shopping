@@ -213,6 +213,24 @@ nav ul li a{
     left: 0;
   }
 }
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in;
+  transition: width 0.4s ease-in;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
 .product{
   width: 100%;
   height: auto;
@@ -220,6 +238,12 @@ nav ul li a{
 .heading{
   text-align: center;
   font-size: 3em;
+}
+#search{
+  color:#ffffff;
+  width: 100%;
+  padding: 10px;
+  background: #00243f;
 }
 
 .message{

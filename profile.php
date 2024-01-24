@@ -20,7 +20,7 @@ include_once("session.php");
     </div>
     <div class="con">
     <div class="container" >
-    <a class="edit" href="edit.php?uid=<?php echo $uid  ;?>">Edit Profile</a>
+    <a class="edit" href="edit.php?uid=<?php echo $user_id  ;?>">Edit Profile</a>
     </div>
     <div class="container-1" >
       <a class="cancel" href="index.php">Cancel?</a></span>
