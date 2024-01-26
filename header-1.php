@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +32,6 @@
                 <li><a class="active" href="index.php">Home</a></li>
                 <li><a href="home.php">Shop</a></li>
                 <li><a href="about.php">About</a></li>
-                <li><a href="viewrecord.php">Customize</a></li>
             </ul>
             
             <ol class="imgs">

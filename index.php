@@ -67,7 +67,7 @@ if(isset($message)){
             <label class="logo"><a href="index.php"><img class="mulana" src="./img/MULANA-removebg-preview.png" alt="picture"></a></label>
             <ul>
                 <li><a class="active" href="index.php">Home</a></li>
-                <li><a href="#">Shop</a></li>
+                <li><a href="shopping.php">Shop</a></li>
                 <li><a href="about.php">About</a></li>
             </ul>
             
