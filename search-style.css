@@ -34,7 +34,15 @@ img{
   width: 100px;
 }
 
-
+#search{
+  color:#ffffff;
+  background: #00243f;
+  width: 40vw;
+  padding: 10px;
+  margin: -9px;
+  right: 15%;
+  border-radius: 16px;
+}
 
 h2{
   padding: 15px;
