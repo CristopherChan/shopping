@@ -64,6 +64,7 @@ if(isset($_GET['delete_all'])){
          <td>
             <form action="" method="post">
                <input type="hidden" name="cart_id" value="<?php echo $fetch_cart['id']; ?>">
+               <input type="hidden" name="product_name" value="<?php echo $fetch_product['name']; ?>">
                <input type="number" min="1" name="cart_quantity" value="<?php echo $fetch_cart['quantity']; ?>">
                <input type="submit" name="update_cart" value="update" class="option-btn">
             </form>
@@ -87,7 +88,7 @@ if(isset($_GET['delete_all'])){
 </table>
 
 <div class="cart-btn">  
-   <a href="homepage.php" class="btn <?php echo ($grand_total > 1)?>">proceed to checkout</a>
+   <a href="checkout.php" class="btn <?php echo ($grand_total > 1)?>">proceed to checkout</a>
 </div>
 <div class="cart-btn">  
    <a class="btn" href="index.php">go back?</a>

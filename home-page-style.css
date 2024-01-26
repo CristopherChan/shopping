@@ -240,10 +240,14 @@ input[type=text]:focus {
 }
 #search{
   color:#ffffff;
-  width: 100%;
-  padding: 10px;
   background: #00243f;
+  width: 40vw;
+  padding: 10px;
+  margin: -9px;
+  right: 15%;
 }
+
+
 
 .message{
   position: sticky;
