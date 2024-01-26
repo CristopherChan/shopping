@@ -7,51 +7,59 @@ $user_id = $_SESSION['user_id'];
 if(!isset($user_id)){
     header('location:login.php');
  };
- 
- 
- 
- if(isset($_POST['add_to_cart'])){
- 
-    $product_name = $_POST['product_name'];
-    $product_price = $_POST['product_price'];
-    $product_image = $_POST['product_image'];
-    $product_quantity = $_POST['product_quantity'];
- 
-    $select_cart = mysqli_query($conn, "SELECT * FROM `cart` WHERE name = '$product_name' AND user_id = '$user_id'") or die('query failed');
- 
-    if(mysqli_num_rows($select_cart) > 0){
-       $message[] = 'product already added to cart!';
-    }else{
-       mysqli_query($conn, "INSERT INTO `cart`(user_id, name, price, image, quantity) VALUES('$user_id', '$product_name', '$product_price', '$product_image', '$product_quantity')") or die('query failed');
-       $message[] = 'product added to cart!';
-    }
- 
- };
-
-
  if(isset($_POST['place_order'])){
-    
-    $user_fname = $_POST['fname'];
-    $user_lname = $_POST['lname'];
+
+    $name = $_POST['name'];
     $email = $_POST['email'];
     $address = $_POST['adds'];
-    $code = $_POST['code'];
+    $zipcode = $_POST['code'];
     $con_number = $_POST['number'];
     $payment = $_POST['payment'];
-    $product_quantity = $_POST['quantity'];
+
+
+    $cart_query = mysqli_query($conn, "SELECT * FROM `cart`");
+   $price_total = -2;
+   if(mysqli_num_rows($cart_query) > 0){
+      while($product_item = mysqli_fetch_assoc($cart_query)){
+         $product_name[] = $product_item['name'] .' ('. $product_item['quantity'] .') ';
+         $product_price = number_format($product_item['price']) * ($product_item['quantity']);
+         $price_total += $product_price;
+
+      };
+   };
+
+
+   
+
+   $total_product = implode(', ',$product_name);
+   $detail_query = mysqli_query($conn, "INSERT INTO `checkout`(name, email, adds, code,number, payments, total_products, total_price) VALUES('$name','$email','$address','$zipcode','$con_number','$payment','$total_product','$price_total')") or die('query failed');
+
+   if($cart_query && $detail_query){
+      echo "
+      <div class='order-message-container'>
+      <div class='message-container'>
+         <h3>thank you for shopping!</h3>
+         <div class='order-detail'>
+            <span>".$total_product."</span>
+            <span class='total'> total : $".$price_total."/-  </span>
+         </div>
+         <div class='customer-details'>
+            <p> your name : <span>".$name."</span> </p>
+            <p> your number : <span>".$email."</span> </p>
+            <p> your email : <span>".$address."</span> </p>
+            <p> your address : <span>".$zipcode."</span> </p>
+            <p> your payment mode : <span>".$payment."</span> </p>
+            <p>(*pay when product arrives*)</p>
+         </div>
+            <a href='products.php' class='btn'>continue shopping</a>
+         </div>
+      </div>
+      ";
+   }
+}
+
  
  
- 
-    $select_cart = mysqli_query($conn, "SELECT * FROM `checkout` WHERE fname = '$user_fname' AND id = '$user_id'") or die('query failed');
- 
-    if(mysqli_num_rows($select_cart) > 0){
-       $message[] = 'failed place order!';
-    }else{
-       mysqli_query($conn, "INSERT INTO `checkout`(id, fname, lname, email, adds, code, number, payments, product_image, quanmtity) VALUES('$user_id', '$user_fname', '$user_lname', '$email', '$address', '$code', '$con_number', '$payment', '$product_quantity')") or die('query failed');
-       $message[] = 'product added to cart!';
-    }
- 
- };
 
 
 
@@ -92,7 +100,7 @@ if(!isset($user_id)){
             </ol>
   </nav>
      </header>
-     <header class="title"> check out</header>
+     <header class="title">Place order</header>
 
    <?php
       $cart_query = mysqli_query($conn, "SELECT * FROM `cart` WHERE user_id = '$user_id'") or die('query failed');
@@ -110,23 +118,19 @@ if(!isset($user_id)){
                 if(mysqli_num_rows($cart_query) > 0){
                 while($fetch_cart = mysqli_fetch_assoc($cart_query)){
         ?>
-      
-            <img src="<?php echo $fetch_cart['image']; ?>" height="100" alt="">
+        <div class="input-box-2">
+        <img src="<?php echo $fetch_cart['image']; ?>" height="100" alt="">
         <?php echo $fetch_cart['name']; ?>
-         
-            <form action="" class="get" method="post">
-               <input type="hidden" name="cart_id" value="<?php echo $fetch_cart['id']; ?>">
-               <input type="number" min="1" name="cart_quantity" value="<?php echo $fetch_cart['quantity']; ?>">
-               <input type="submit" name="place_order" value="update" class="option-btn">
-            </form>
-         
+        <input type="hidden" name="cart_id" value="<?php echo $fetch_cart['id']; ?>">
         ₱<?php echo $sub_total = ($fetch_cart['price'] * $fetch_cart['quantity']); ?>
-      
+                </div>
+       
+        
         <?php
             $grand_total += $sub_total;
             }  
-            }else{
-            echo '<tr><td style="padding:20px; text-transform:capitalize;" colspan="6">no item added</td></tr>';
+       
+            
         }
     }
 }
@@ -136,13 +140,8 @@ if(!isset($user_id)){
                <div class="colunm">
                 <div class="input-box">
                     <label for="fname">Firstname:</label>
-                    <input type="text" id="fname" name="fname" placeholder="Enter First Name" required>
+                    <input type="text" id="fname" name="name" placeholder="Enter First Name" required>
                 </div>
-                <div class="input-box">
-                    <label for="lname">Lastname:</label>
-                    <input type="text" id="lname" name="lname" placeholder="Enter LastName" required>
-                </div>
-               
                 <div class="input-box">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" placeholder="Enter Email" required>

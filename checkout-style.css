@@ -190,9 +190,12 @@ nav ul li a{
   }
 }
 .title{
+  width: 50%;
+  margin: auto;
   font-size:5em;
   color: #000;
   text-transform: capitalize;
+  text-align: center;
 }
 .check{
   margin: auto;
@@ -317,6 +320,20 @@ label{
   
 
 }
+.input-box-2{
+  display: block;
+  margin: auto;
+  text-align: center;
+  width:400px;
+  border:1px solid #000;
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,.5);
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
 
 ::placeholder {
   color: rgb(0, 0, 0);
