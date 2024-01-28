@@ -74,6 +74,7 @@ if(isset($_POST["submit"])){
             <li><input type="file" name="imageUpload" id="imageUpload" required hidden></li>
             <li><input id="upload" type="submit" value="Upload" name="submit"></li>
             <li><a  href="#"><h1 class="cancel">cancel?<h1></a></li>
+            <li><a  href="#"><h1 class="order">View Order<h1></a></li>
             </ul>
         </form>
     </section>
