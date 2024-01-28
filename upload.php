@@ -61,7 +61,7 @@ if(isset($_POST["submit"])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="upload-1.css">
+    <link rel="stylesheet" href="upload-style.css">
 </head>
 <body>
 
@@ -74,7 +74,7 @@ if(isset($_POST["submit"])){
             <li><input type="file" name="imageUpload" id="imageUpload" required hidden></li>
             <li><input id="upload" type="submit" value="Upload" name="submit"></li>
             <li><a  href="#"><h1 class="cancel">cancel?<h1></a></li>
-            <li><a  href="#"><h1 class="order">View Order<h1></a></li>
+            <li><a  href="vieworder.php"><h1 class="order">View Order<h1></a></li>
             </ul>
         </form>
     </section>

@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.tb_border, th, td{
+    border: .1px solid black;
+    text-transform: capitalize;
+}
+.main-container{
+    text-align: center;
+    margin: auto;
+}
+.container ,.tb_border{
+    max-width: 1000px;
+    margin: auto;
+    border: 1px solid black;
+    overflow-y: auto;
+}
+.container{
+  margin-top: 100px;
+  border-radius: 36px;
+  border: 1px solid black;
+  box-shadow: 0 0 15px rgba(0,0,0,.5);
+
+}
+
+td{
+    padding: 10px;
+    text-align: center;
+
+}
+.header{
+    font-size: 2em;
+    text-transform: capitalize;
+}
+thead{
+    background: #365486;
+}
+tbody{
+    background: #DCF2F1;
+}
+.view, a{
+    display: flex;
+    padding: 20px;
+    color: black;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+a{
+    background: rgb(36, 129, 235);
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px;
+}
+

@@ -1,12 +1,14 @@
 <?php
 include("connection.php")
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style-1.css">
+  <link rel="stylesheet" href="vieworder-style.css">
   <title>Customer Registration Form</title>
 </head>
 <body>
@@ -26,7 +28,6 @@ include("connection.php")
           <th>Customer Name</th>
           <th>total order</th>
           <th>total price</th>
-          <th>Order Status</th>
           <th colspan="2" id="rows">action</th>
         </tr>
       </thead>
@@ -44,7 +45,6 @@ include("connection.php")
 				$cus_name = $row['name'];
 				$total_products = $row['total_products'];
         $total_price = $row['total_price'];
-        $status = $row['status'];
 			
 			
 		?>
@@ -57,14 +57,17 @@ include("connection.php")
       <td><?php echo $cus_name;?></td>
 			<td><?php echo $total_products;?></td>
 			<td><?php echo $total_price;?></td>
-			<td><?php echo $status;?></td>
-			<td><a href="edit.php?uid=<?php echo $ids;?>">Edit</a> | <a href="delete.php?uid=<?php echo $id;?>" onclick="return confirm('Are you sure?')">Delete</a></td>
+			<td><a href="delete.php?uid=<?php echo $ids;?>" onclick="return confirm('Are you sure?')">Delete</a></td>
 		</tr>
 			<?php } ?>
       </tbody>
     </table>
     <div class="view">
-      <a id="reg" href="index.php">Register</a>
+      <a  href="vieworder.php">View Order</a>
+      <a id="reg" href="index.php">check your products?</a>
+      <a  href="login.php">cancel?</a>
+
+
     </div>
     </div>
 
