@@ -20,7 +20,6 @@ include("config.php")
         <tr>
           <th>name</th>
           <th>email</th>
-          <th>password</th>
           <th>username</th>
           <th>picture</th>
           <th colspan="2" id="rows">action</th>

@@ -62,14 +62,14 @@ if(isset($_POST['update'])){
         $query->execute();
 
         echo "<script>alert('successfully Updated!')</script>";
-        echo "<script>window.open('viewrecord-1.php','_self')</script>";
+        echo "<script>window.open('profile.php','_self')</script>";
         }else {
                       echo "<script>alert('your file is to large')</script>";
-                      echo "<script>window.open('viewrecord-1.php','_self')</script>";
+                      echo "<script>window.open('profile.php','_self')</script>";
                   
                   }
           } echo "<script>alert('Sorry, only jpeg, jpg and png is allowed')</script>";
-          echo "<script>window.open('viewrecord-1.php','_self')</script>";
+          echo "<script>window.open('profile.php','_self')</script>";
             }
     }
 
