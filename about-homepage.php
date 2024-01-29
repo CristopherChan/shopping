@@ -20,7 +20,7 @@ if(!isset($user_id)){
 </head>
 <body>
     <?php
-      include_once 'header-1.php';
+      include_once 'header-2.php';
     ?>  
     <!-- About Section -->
     <section class="about">
@@ -55,15 +55,14 @@ if(!isset($user_id)){
         <footer>
           <div class="items">
             <div class="logo-1">
-              <a href="index.html">
+              <a href="user-homepage.php">
              <img class="logos" src="./img/MULANA-removebg-preview.png" alt="Company Logo"/></a>
             </div>
             <ul class="footer-list">
-              <li><a class="footer1" href="#">Home</a></li>
-              <li><a class="footer1" href="#">Shop</a></li>
-              <li><a class="footer1" href="#">About</a></li>
-              <li><a class="footer1" href="#">Customize</a></li>
-              <li><a class="footer1" href="#">Contact</a></li>
+              <li><a class="footer1" href="user-homepage.php">Home</a></li>
+              <li><a class="footer1" href="homepage.php">Shop</a></li>
+              <li><a class="footer1" href="about-homepage.php">About</a></li>
+             
             </ul>
             <div class="has-1">
               <h2 id="hastag-1"> #ReadyForAnything #EndlessExplorations<h2>

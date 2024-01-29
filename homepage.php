@@ -64,16 +64,16 @@ if(isset($message)){
             <label for="check" class="checkbtn">
                 <img class="menu" src="./img/icons8-menu-50.png" alt="menu">
             </label>
-            <label class="logo"><a href="homepage-log.php"><img class="mulana" src="./img/MULANA-removebg-preview.png" alt="picture"></a></label>
+            <label class="logo"><a href="user-homepage.php"><img class="mulana" src="./img/MULANA-removebg-preview.png" alt="picture"></a></label>
             <ul>
-                <li><a class="active" href="homepage.php">Home</a></li>
+                <li><a class="active" href="user-homepage.php">Home</a></li>
                 <li><a href="homepage.php">Shop</a></li>
                 <li><a href="about-homepage.php">About</a></li>
             </ul>
             
             <ol class="imgs">
             <li><form action="search.php" method="post">
-                <input type="text" id="search" placeholder="search here..." name="search">
+                <input type="text" id="search" placeholder="search here..." name="search" title="search">
             </form></li>
             <li><a href="shopping.php"><img class="people" src="./img/grocery-store.png" alt=""></a></li>
 

@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Kablammo&family=Oswald:wght@600&family=PT+Serif:wght@700&family=Poppins:wght@200;300;600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a076d05399.js"crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Kablammo&family=Oswald:wght@600&family=PT+Serif:wght@700&family=Poppins:wght@200;300;600&family=Shrikhand&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Kablammo&family=Oswald:wght@600&family=PT+Serif:wght@700&family=Poppins:wght@200;300;600&family=Shrikhand&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <link rel="stylesheet" href="shop-style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +30,7 @@
         <li><a href="about.php">About</a></li>
       </ul>
       <ol class="imgs">
-        <li><a href="login.html"><img class="people" src="./img/people.png" alt=""></a></li>
+        <li><a href="login.php"><img class="people" src="./img/people.png" alt=""></a></li>
       </ol>
     </nav>
     <!-- shop menu -->
@@ -82,15 +92,14 @@
     <footer>
       <div class="items">
         <div class="logo-1">
-          <a href="index.html">
+          <a href="index.php">
          <img class="logos" src="./img/MULANA-removebg-preview.png" alt="Company Logo"/></a>
         </div>
         <ul class="footer-list">
-          <li><a class="footer1" href="#">Home</a></li>
-          <li><a class="footer1" href="#">Shop</a></li>
-          <li><a class="footer1" href="#">About</a></li>
-          <li><a class="footer1" href="#">Customize</a></li>
-          <li><a class="footer1" href="#">Contact</a></li>
+          <li><a class="footer1" href="index.php">Home</a></li>
+          <li><a class="footer1" href="shop.php">Shop</a></li>
+          <li><a class="footer1" href="about.php">About</a></li>
+         
         </ul>
         <div class="has-1">
           <h2 id="hastag-1"> #ReadyForAnything #EndlessExplorations<h2>

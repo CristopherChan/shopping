@@ -49,8 +49,8 @@
                 </div>
                 <div class="input-box">
                 <select name="user_type">
+                <option value="user">User</option>
                 <option value="admin">Admin</option>
-                <option value="user">user</option>
                 </select>
                 </div>
                 <div class="input-box">

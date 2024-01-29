@@ -23,7 +23,7 @@ include_once("session.php");
     <a class="edit" href="edit.php?uid=<?php echo $user_id  ;?>">Edit Profile</a>
     </div>
     <div class="container-1" >
-      <a class="cancel" href="index.php">Cancel?</a></span>
+      <a class="cancel" href="homepage.php">Cancel?</a></span>
     </div>
     </div>
   </form>

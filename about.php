@@ -44,15 +44,13 @@
         <footer>
           <div class="items">
             <div class="logo-1">
-              <a href="index.html">
+              <a href="index.php">
              <img class="logos" src="./img/MULANA-removebg-preview.png" alt="Company Logo"/></a>
             </div>
             <ul class="footer-list">
-              <li><a class="footer1" href="#">Home</a></li>
-              <li><a class="footer1" href="#">Shop</a></li>
-              <li><a class="footer1" href="#">About</a></li>
-              <li><a class="footer1" href="#">Customize</a></li>
-              <li><a class="footer1" href="#">Contact</a></li>
+              <li><a class="footer1" href="index.php">Home</a></li>
+              <li><a class="footer1" href="shop.php">Shop</a></li>
+              <li><a class="footer1" href="about.php">About</a></li>
             </ul>
             <div class="has-1">
               <h2 id="hastag-1"> #ReadyForAnything #EndlessExplorations<h2>

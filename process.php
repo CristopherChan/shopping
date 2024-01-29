@@ -21,7 +21,7 @@ if(isset($_POST['login'])){
 			$_SESSION['cid'] = $id;
 
 			if ($role == 'user') {
-			header("Location:index.php");
+			header("Location:homepage.php");	
 			}else if ($role == 'admin'){
 			header("Location:upload.php");
 			}
