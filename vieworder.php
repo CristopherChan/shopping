@@ -65,7 +65,7 @@ include("connection.php")
     <div class="view">
       <a  href="vieworder.php">View Order</a>
       <a id="reg" href="index.php">check your products?</a>
-      <a  href="login.php">cancel?</a>
+      <a  href="upload.php">cancel?</a>
 
 
     </div>

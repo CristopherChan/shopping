@@ -7,17 +7,18 @@
 }
 
 body{
+    background: #ffffff;
 }
 
 section{
+    background: rgb(180, 212, 255);
     margin: auto;
     height: 700px;
     width: 40%;
     text-align: center;
     align-items: baseline;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(62,62,193,1) 35%, rgba(0,212,255,1) 100%);
     border-radius: 12px;
-    margin-top: 5%;
+    margin-top: 3%;
     position: relative;
     box-shadow: 0 0 15px rgba(0,0,0,.5);
 
@@ -69,10 +70,10 @@ section{
     border-radius:0 0 16px 16px ;
     margin: 30px;
     text-transform: uppercase;
-    color: aliceblue;
+    color: rgb(233, 236, 239);
     font-size: 34px;
-    background: tan;
     padding: 10px;
+    background: #7077A1;
 }
 form{
     
@@ -85,11 +86,10 @@ form{
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0,0,0,.5);
-
-
+    border: 1px solid black;
+    background: #1F2544;
 
 }
 ul{

@@ -130,15 +130,17 @@ if(!isset($user_id)){
                 </div>
                 
                 <div class="input-box">
-                    <a href="shopping.php?delete_all" onclick="return confirm('delete all from cart?');" class="delete-btn <?php echo ($grand_total > 1)?'':'disabled'; ?>">Go Back?</a>
+                    <a id="submit" href="shopping.php?delete_all" onclick="return confirm('Are you sure?');" class="delete-btn <?php echo ($grand_total > 1)?'':'disabled'; ?>">Go Back?</a>
                 </div>
                 <div class="input-box">
-                    <a href="index.php">cancel?</a>
+                    <a id="submit" href="homepage.php">cancel?</a>
                 </div>
             </div>
                </table>
+               <div class="grand">
                grand total :
     ₱<?php echo $grand_total; ?>
+    </div>
             </form>
             
 </tbody>

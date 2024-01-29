@@ -17,12 +17,12 @@ if(isset($_POST['update_cart'])){
 if(isset($_GET['remove'])){
    $remove_id = $_GET['remove'];
    mysqli_query($conn, "DELETE FROM `cart` WHERE id = '$remove_id'") or die('query failed');
-   header('location:index.php');
+   header('location:homepage.php');
 }
   
 if(isset($_GET['delete_all'])){
    mysqli_query($conn, "DELETE FROM `cart` WHERE user_id = '$user_id'") or die('query failed');
-   header('location:index.php');
+   header('location:homepage.php');
 }
 
 ?>
@@ -91,7 +91,7 @@ if(isset($_GET['delete_all'])){
    <a href="checkout.php" class="btn <?php echo ($grand_total > 1)?>">proceed to checkout</a>
 </div>
 <div class="cart-btn">  
-   <a class="btn" href="index.php">go back?</a>
+   <a class="btn" href="homepage.php">go back?</a>
 </div>
 </div>
 </div>

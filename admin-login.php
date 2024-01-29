@@ -19,16 +19,14 @@
       <input type="password" placeholder="Enter Password" name="password" required>
           
       <button type="submit" name="login">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
+      <div class="cancel">
+      <a class="can" href="login.php">cancel</a>
+      </div>
     </div>
   
-    <div class="container" >
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
+   
     <div class="input-box">
-      Don't have an account?<a class="log" href="create.php" target="_blank">Sign Up</a>
+      Don't have an account?<a class="log" href="create.php" target="_self">Sign Up</a>
   </div>
   </form>
 </body>

@@ -15,14 +15,15 @@ body{
 }
 .con{
   border-radius: 12px;
-  width: 900px;
+  width: 910px;
   height: 800px;
   margin: auto;
   position: absolute;
   top: 50%;
   left: 50%;
   transform:translate(-50%, -50%);
-  box-shadow: 0 0 12px rgba(0,0,0,.5);
+  box-shadow: 0 0 20px rgba(0,0,0,.5);
+  background: rgb(238, 245, 255);
 
 }
 .con-1 .title{
@@ -30,15 +31,16 @@ body{
   text-align: center;
   align-items: center;
   width: max-content;
-  background: blueviolet;
+  background:rgb(23, 107, 135);
   margin:20px auto;  
   width: auto;
   font-size: 1.4em;
 }
 .con-2 {
-  background: tomato;
+  background: rgb(180, 212, 255);
   width: 550px;
-  height: 500px;
+  padding: 10px;
+  height: auto;
   align-self: center;
   flex-direction: column;
   position: absolute;
@@ -64,12 +66,11 @@ body{
 .image{
   margin: 10px;
   border-radius: 12px;
-  border:1px solid black;
   width: min-content;
   height: auto;
   text-align: center;
   box-shadow: 0 0 15px rgba(0,0,0,.5);
-  background: transparent;
+  background: rgb(180, 212, 255);
 
 }
 .max{
@@ -120,7 +121,7 @@ input{
   margin-left:10px ;
   text-align: center;
   align-items: center;
-  background: blueviolet;
+  background: rgb(36, 129, 235);
   border-radius: 12px;
   font-size: 16px;
 

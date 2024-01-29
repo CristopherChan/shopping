@@ -29,15 +29,14 @@
             </label>
             <label class="logo"><a href="index.php"><img class="mulana" src="./img/MULANA-removebg-preview.png" alt="picture"></a></label>
             <ul>
-                <li><a class="active" href="index.php">Home</a></li>
-                <li><a href="home.php">Shop</a></li>
-                <li><a href="about.php">About</a></li>
+                <li><a class="active" href="homepage.php">Home</a></li>
+                <li><a href="homepage.php">Shop</a></li>
+                <li><a href="about-homepage.php">About</a></li>
             </ul>
             
             <ol class="imgs">
-            
-                
-            <li><a href="login.php"><img class="people" src="./img/people.png" alt=""></a></li>
+        
+            <li><a href="homepage.php"><img class="people" src="./img/people.png" alt=""></a></li>
 
             </ol>
   </nav>

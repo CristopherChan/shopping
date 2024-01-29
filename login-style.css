@@ -7,7 +7,7 @@ form {
   width: 400px;
   text-align: center;
   margin: auto;
-  margin-top: 200px;
+  margin-top:20dvh;
   margin-bottom: 200px;
   height: 550px;
   border-radius: 20px;
@@ -32,8 +32,9 @@ h1{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .input-box {
-  margin-top: 50px;
+  margin-top: 30px;
   font-size: 12px;
+  text-transform: capitalize;
 }
 .logo{
   width: 100px;
@@ -104,4 +105,26 @@ span.psw {
   .cancelbtn {
      width: 100%;
   }
+}
+.cancel{
+  margin-top: 10px;
+  background: rgb(36, 129, 235);
+  padding: 14px 20px;
+  border-radius: 12px;
+
+}
+.can{
+  text-transform: capitalize;
+  text-decoration: none;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 700px;
+  border-radius: 12px;
+}
+.cancel:hover {
+  opacity: 0.8;
+  background: linear-gradient(23deg,rgb(32, 32, 32)0%, rgb(20, 20, 20)100%);
 }
