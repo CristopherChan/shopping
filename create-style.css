@@ -3,7 +3,6 @@
   margin: 0%;
   list-style: none;
   text-decoration: none;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 body{
   background: white;
@@ -128,6 +127,8 @@ span{
 
 
 nav{
+  font-family: 'poppins';
+
   background:transparent;
   height: 80px;
   width: 100%;

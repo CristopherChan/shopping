@@ -117,43 +117,43 @@
 
       <div class="product">
         <a href="login.php"><img id="first-item" decoding="async" src="./img/1liter glass water bottle.jpg" alt="picture" title="silicon" loading="lazy"></a>
-        <h4 class="feat">Featured Products</h4>
-        <p class="price">$19.99</p>
+        <h4 class="feat"> Liter/ 1000 ml Personalized Glass Water Bottle / Tumbler with Bamboo Lid (With Laser Engraved)</h4>
+        <p class="price">₱400</p>
       </div>
       <div class="product">
         <a href="login.php"><img id="first-item" decoding="async" src="./img/5ec95d50582a1022a85b6d4e5394950e.jfif" alt="picture" title="silicon"></a>
-        <h4 class="feat">Featured Products</h4>
-        <p class="price">$19.99</p>
+        <h4 class="feat">50 ml Personalized Glass Water Bottle / Tumbler with Bamboo Lid (Free Laser Engraved)</h4>
+        <p class="price">₱320</p>
       </div>
       <div class="product">
         <a href="login.php"><img id="first-item" decoding="async" src="./img/00615d5bfc976068a4a9097b40d609a7.jfif" alt="picture" title="silicon"></a>
-        <h4 class="feat">Featured Products</h4>
-        <p class="price">$19.99</p>
+        <h4 class="feat">550 ml Personalized Glass Water Bottle / Tumbler with Bamboo Lid (Free Laser Engraved)</h4>
+        <p class="price">₱320</p>
       </div>
       <div class="product">
         <a href="login.php"><img id="first-item" decoding="async" src="./img/66e2710c9edd093e3422c0efd07b6ea4.jfif" alt="picture" title="silicon"></a>
-        <h4 class="feat">Featured Products</h4>
-        <p class="price">$19.99</p>
+        <h4 class="feat">550ml Personalized Glass Water Bottle/Tumbler with Bamboo Lid - Narrow Mouth (Free Laser Engraved)</h4>
+        <p class="price">₱280</p>
       </div>
       <div class="product">
         <a href="login.php"><img id="first-item" decoding="async" src="./img/5254e841f1443f906ad63098bf5c4e3b.jfif" alt="picture" title="silicon"></a>
-        <h4 class="feat">Featured Products</h4>
-        <p class="price">$19.99</p>
+        <h4 class="feat">Anti-Slip Silicone Cup/Glass Bottle Sleeves</h4>
+        <p class="price">₱60</p>
       </div>
       <div class="product">
         <a href="login.php"><img id="first-item" decoding="async" src="./img/a1c20e60f1fea66ea40521175382fd94.jfif" alt="picture" title="silicon"></a>
-        <h4 class="feat">Featured Products</h4>
-        <p class="price">$19.99</p>
+        <h4 class="feat">500ml Personalized Glass Water Bottle with Bamboo Lid & Silicone Sleeve (With Laser Engraved)</h4>
+        <p class="price">₱400</p>
       </div>
       <div class="product">
         <a href="login.php"><img id="first-item" decoding="async" src="./img/b41c1a677b59663b500fee956e417aee.jfif" alt="picture" title="silicon"></a>
-        <h4 class="feat">Featured Products</h4>
-        <p class="price">$19.99</p>
+        <h4 class="feat">250ml Insulated Double Wall Glass Coffee Mug with Handle</h4>
+        <p class="price">₱178</p>
       </div>
       <div class="product">
         <a href="login.php"><img id="first-item" decoding="async" src="./img/ea4ba99dc096349a7b941a00a51f624f.jfif" alt="picture" title="silicon"></a>
-        <h4 class="feat">Featured Products</h4>
-        <p class="price">$19.99</p>
+        <h4 class="feat">Handmade Cotton Woven Round Placemat/Coaster Insulation Pad</h4>
+        <p class="price">₱65</p>
       </div>
     </div>
     <div class="customize">
