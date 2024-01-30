@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" href="./img/MULANA-removebg-preview.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="homepage-style.css">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter&family=Kablammo&family=Oswald:wght@600&family=PT+Serif:wght@700&family=Poppins:wght@200;300;600&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/a076d05399.js"crossorigin="anonymous"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter&family=Kablammo&family=Oswald:wght@600&family=PT+Serif:wght@700&family=Poppins:wght@200;300;600&family=Shrikhand&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter&family=Kablammo&family=Oswald:wght@600&family=PT+Serif:wght@700&family=Poppins:wght@200;300;600&family=Shrikhand&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Kablammo&family=Oswald:wght@600&family=PT+Serif:wght@700&family=Poppins:wght@200;300;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Kablammo&family=Oswald:wght@600&family=PT+Serif:wght@700&family=Poppins:wght@200;300;600&family=Shrikhand&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Kablammo&family=Oswald:wght@600&family=PT+Serif:wght@700&family=Poppins:wght@200;300;600&family=Shrikhand&display=swap" rel="stylesheet">
 
   <title>mulanaPh</title>
   

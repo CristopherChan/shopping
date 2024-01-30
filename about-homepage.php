@@ -13,6 +13,8 @@ if(!isset($user_id)){
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" href="./img/MULANA-removebg-preview.png">
+
   <meta charset="UTF-8">
   <link rel="stylesheet" href="about-style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
