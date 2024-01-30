@@ -224,8 +224,9 @@ body{
 
 }
 .picture #advs{
+  width: 400px;
   border-radius: 10px;
-  margin:4em 0 0 3em; 
+  margin:7em 0 0 15em; 
 }
 .parent{
   width: 100%;

@@ -65,8 +65,6 @@ if(!isset($user_id)){
       <span class="dot"></span> 
       <span class="dot"></span> 
     </div>
-
-
     <div class="second">
       <div class="text-one">
         <h2 id="ready">ready for anything</h2>
@@ -75,24 +73,27 @@ if(!isset($user_id)){
         <h3 id="brand">AquaFlask is an original brand of vacuum-insulated bottle. Designed in California, AquaFlask provides quality and durable bottle that can keep your beverage hot for 12 hours and cold for 24 hours</h3>
       </div>      
       <div class="picture">
-        <img id="advs" src="./img/Aqua-Flask-Finals-July-8-11-768x679.jpg" alt="picture">
+        <img id="advs" src="./img/12.jpg" alt="picture">
       </div>
     </div>
     <div class="parent">
       <div class="child">
         <div class="pic-collect">
           <ul class="collect">
-          <img id="col" src="./img/1liter glass water bottle.jpg" alt="collection">
-          <img id="col" src="./img/1liter glass water bottle.jpg" alt="collection">
-          <img id="col" src="./img/1liter glass water bottle.jpg" alt="collection">
-          <img id="col" src="./img/1liter glass water bottle.jpg" alt="collection">
-          <img id="col" src="./img/1liter glass water bottle.jpg" alt="collection">
-          <img id="col" src="./img/1liter glass water bottle.jpg" alt="collection">
-          <img id="col" src="./img/1liter glass water bottle.jpg" alt="collection">
-          <img id="col" src="./img/1liter glass water bottle.jpg" alt="collection">
-          <img id="col" src="./img/1liter glass water bottle.jpg" alt="collection">
-          <img id="col" src="./img/1liter glass water bottle.jpg" alt="collection">
-          <img id="col" src="./img/1liter glass water bottle.jpg" alt="collection">
+            
+          <img id="col" src="./img/13.jpg" alt="collection">
+          <img id="col" src="./img/24.jpg" alt="collection">
+          <img id="col" src="./img/16.jpg" alt="collection">
+          <img id="col" src="./img/19.jpg" alt="collection">
+          <img id="col" src="./img/22.jpg" alt="collection">
+          <img id="col" src="./img/15.jpg" alt="collection">
+          <img id="col" src="./img/17.jpg" alt="collection">
+          <img id="col" src="./img/14.jpg" alt="collection">
+          <img id="col" src="./img/18.jpg" alt="collection">
+          <img id="col" src="./img/21.jpg" alt="collection">
+          <img id="col" src="./img/22.jpg" alt="collection">
+          <img id="col" src="./img/23.jpg" alt="collection">
+
         </ul>
         </div>
         <div class="community">
@@ -127,52 +128,42 @@ if(!isset($user_id)){
       <h4 class="prods">Featured Products</h4>
 
       <div class="product">
-        <a href="homepage.php"><img id="first-item" decoding="async" src="./img/1.jpg" alt="picture" title="silicon" loading="lazy"></a>
+        <a href="homepage.php"><img id="first-item" decoding="async" src="./img/1liter glass water bottle.jpg" alt="picture" title="silicon" loading="lazy"></a>
         <h4 class="feat">Featured Products</h4>
         <p class="price">$19.99</p>
       </div>
       <div class="product">
-        <a href="homepage.php"><img id="first-item" decoding="async" src="./img/1.jpg" alt="picture" title="silicon"></a>
+        <a href="homepage.php"><img id="first-item" decoding="async" src="./img/5ec95d50582a1022a85b6d4e5394950e.jfif" alt="picture" title="silicon"></a>
         <h4 class="feat">Featured Products</h4>
         <p class="price">$19.99</p>
       </div>
       <div class="product">
-        <a href="homepage.php"><img id="first-item" decoding="async" src="./img/1.jpg" alt="picture" title="silicon"></a>
+        <a href="homepage.php"><img id="first-item" decoding="async" src="./img/00615d5bfc976068a4a9097b40d609a7.jfif" alt="picture" title="silicon"></a>
         <h4 class="feat">Featured Products</h4>
         <p class="price">$19.99</p>
       </div>
       <div class="product">
-        <a href="homepage.php"><img id="first-item" decoding="async" src="./img/1.jpg" alt="picture" title="silicon"></a>
+        <a href="homepage.php"><img id="first-item" decoding="async" src="./img/66e2710c9edd093e3422c0efd07b6ea4.jfif" alt="picture" title="silicon"></a>
         <h4 class="feat">Featured Products</h4>
         <p class="price">$19.99</p>
       </div>
       <div class="product">
-        <a href="homepage.php"><img id="first-item" decoding="async" src="./img/1.jpg" alt="picture" title="silicon"></a>
+        <a href="homepage.php"><img id="first-item" decoding="async" src="./img/5254e841f1443f906ad63098bf5c4e3b.jfif" alt="picture" title="silicon"></a>
         <h4 class="feat">Featured Products</h4>
         <p class="price">$19.99</p>
       </div>
       <div class="product">
-        <a href="homepage.php"><img id="first-item" decoding="async" src="./img/1.jpg" alt="picture" title="silicon"></a>
+        <a href="homepage.php"><img id="first-item" decoding="async" src="./img/a1c20e60f1fea66ea40521175382fd94.jfif" alt="picture" title="silicon"></a>
         <h4 class="feat">Featured Products</h4>
         <p class="price">$19.99</p>
       </div>
       <div class="product">
-        <a href="homepage.php"><img id="first-item" decoding="async" src="./img/1.jpg" alt="picture" title="silicon"></a>
+        <a href="homepage.php"><img id="first-item" decoding="async" src="./img/b41c1a677b59663b500fee956e417aee.jfif" alt="picture" title="silicon"></a>
         <h4 class="feat">Featured Products</h4>
         <p class="price">$19.99</p>
       </div>
       <div class="product">
-        <a href="homepage.php"><img id="first-item" decoding="async" src="./img/1.jpg" alt="picture" title="silicon"></a>
-        <h4 class="feat">Featured Products</h4>
-        <p class="price">$19.99</p>
-      </div>
-      <div class="product">
-        <a href="homepage.php"><img id="first-item" decoding="async" src="./img/1.jpg" alt="picture" title="silicon"></a>
-        <h4 class="feat">Featured Products</h4>
-        <p class="price">$19.99</p>
-      </div>
-      <div class="product">
-        <a href="homepage.php"><img id="first-item" decoding="async" src="./img/1.jpg" alt="picture" title="silicon"></a>
+        <a href="homepage.php"><img id="first-item" decoding="async" src="./img/ea4ba99dc096349a7b941a00a51f624f.jfif" alt="picture" title="silicon"></a>
         <h4 class="feat">Featured Products</h4>
         <p class="price">$19.99</p>
       </div>
@@ -205,7 +196,7 @@ if(!isset($user_id)){
           </ul>
         </div>
         <div class="copyR">
-         <a class="cr" href="index.php"> © 2021 Mulana. All rights reserved | Design by Cristopher Chan </a>
+         <a class="cr" href="user-homepage.php"> © 2021 Mulana. All rights reserved | Design by Cristopher Chan </a>
         </div>
       </div>
       
