@@ -58,7 +58,7 @@ include("connection.php")
       <td><?php echo $cus_name;?></td>
 			<td><?php echo $total_products;?></td>
 			<td><?php echo $total_price;?></td>
-			<td><a href="delete.php?uid=<?php echo $ids;?>" onclick="return confirm('Are you sure?')">Delete</a></td>
+			<td><a href="delete.php?uid=<?php echo $ids;?>" onclick="return confirm('Are you sure?')">Delete</a></td> | 	<td><a href="edit-info.php?uid=<?php echo $ids;?>" onclick="return confirm('Are you sure?')">edit</a></td>			
 		</tr>
 			<?php } ?>
       </tbody>
